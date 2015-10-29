@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Piensa Joven</title>
+<meta charset="utf-8">
+<link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/jquery.min.js"></script>
+<!--- Gooogle Fonts Links ---->
+<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'>
+<!-- Custom Theme files -->
+<link href="css/style.css" rel='stylesheet' type='text/css' />
+<!-- Custom Theme files -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+<script type="text/javascript" src="js/move-top.js"></script>
+					<script type="text/javascript" src="js/easing.js"></script>
+					<script type="text/javascript">
+					jQuery(document).ready(function($) {
+						$(".scroll").click(function(event){		
+							event.preventDefault();
+							$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+						});
+					});
+					</script>
+</head>
+<body>
+<!-- Header starts Here-->
+	<div class="header" id="home">
+		<div class="container">
+		  		<div class="menu">																
+			<a href="#" class="right_bt" id="activator"><img src="images/nav.png" alt=""/></a>
+				<div class="box" id="box">
+				   <div class="box_content_center">
+					   <div class="menu_box_list">
+						   <ul>
+							   <li><a href="#home" class="scroll">Inicio</a></li>
+							   <li class="active"><a href="#about" class="scroll">Proyectos</a></li> 
+							   <li><a href="#contact" class="scroll">Contactos</a></li>
+							</ul>
+						</div>
+						<a class="boxclose" id="boxclose"><img src="images/close.png" alt=""/></a>
+					  </div>                
+					</div>
+					<script type="text/javascript" src="js/easing.js"></script>
+					     <script type="text/javascript">
+								var $ = jQuery.noConflict();
+									$(function() {
+										$('#activator').click(function(){
+												$('#box').animate({'top':'0px'},500);
+										});
+										$('#boxclose').click(function(){
+												$('#box').animate({'top':'-700px'},500);
+										});
+									});
+									$(document).ready(function(){
+									
+									//Hide (Collapse) the toggle containers on load
+									$(".toggle_container").hide(); 
+									
+									//Switch the "Open" and "Close" state per click then slide up/down (depending on open/close state)
+									$(".trigger").click(function(){
+										$(this).toggleClass("active").next().slideToggle("slow");
+										return false; //Prevent the browser jump to the link anchor
+									});
+									
+									});
+								</script>
+				</div> 	
+				<div class="logo">
+				  <a href="index.html"><img src="images/logo.png" alt=""></a>
+				</div>
+				<div class="top-social">
+					<ul class="social">
+						<li><a href="https://www.facebook.com/ADSIB-460386363989109/" target="_blank"><i class="fa"></i></a></li>
+						<li><a href="https://twitter.com/adsib1" target="_blank"><i class="tw"></i></a></li>
+						<li><a href="https://plus.google.com/112116625263511870664/videostarget="_blank"><i class="gp"></i></a></li>
+						<li><a href="http://www.adsib.gob.bo/adsibnueva/" target="_blank"><i class="pin"></i></a></li>
+					</ul>
+				</div>
+	  			<div class="clearfix"> </div>
+	  			
+	  			<!--- banner Slider starts Here --->
+	  			<script src="js/responsiveslides.min.js"></script>
+			 <script>
+			    // You can also use "$(window).load(function() {"
+			    $(function () {
+			      // Slideshow 4
+			      $("#slider4").responsiveSlides({
+			        auto: true,
+			        pager: true,
+			        nav: true,
+			        speed: 500,
+			        namespace: "callbacks",
+			        before: function () {
+			          $('.events').append("<li>before event fired.</li>");
+			        },
+			        after: function () {
+			          $('.events').append("<li>after event fired.</li>");
+			        }
+			      });
+			
+			    });
+			  </script>
+			<!----//End-slider-script---->
+			<!-- Slideshow 4 -->
+			    <div  id="top" class="callbacks_container">
+			      <ul class="rslides" id="slider4">
+			        <li>
+			          <div class="slider-top">
+			          	<h1>Piensa Joven<br>
+Amuyasiway wayna
+</h1>
+			          	<p>Proyecto Diseño y Desarrollo de aplicaciones informáticas para jóvenes de escuelas públicas.</p>
+
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+			          	<h1>Piensa Joven<br>
+Amuyasiway wayna
+</h1>
+			          	<p>Agencia para el Desarrollo de las Sociedades de la Información</p>
+
+			          </div>
+			        </li>
+			        <li>
+			          <div class="slider-top">
+			          	<h1>Piensa Joven<br>
+Amuyasiway wayna
+</h1>
+			          	<p>Proyecto enmarcado en el Programa I, Educación para la paz y el desarrollo sustentable, en la creación de oportunidades a partir de la inclusión de las tecnologías de la información y la comunicación en el ámbito de la educación.  </p>
+
+			          </div>
+			        </li>
+			      </ul>
+			    </div>
+
+			    <div class="clearfix"> </div>
+	  			<!--- banner Slider Ends Here ---> 
+		</div>
+	</div>
+	<!-- Header Ends Here-->
+	<!-- Content Starts Here --->
+	<div class="content" id="about">
+		<div class="container">
+			<div class="content-top">
+				<h2>Proyectos de problematicas sociales desarrollado por jovenes Bolivianos</h2>
+				<p>Estimado visitante, te invitamos a que puedas revisar el trabajo elaborado durante dos meses por jóvenes de escuelas publicas de La Paz y El Alto.	Al ingresar a uno de ellos estas botando por su trabajo en la competencia que durará desde el 3 noviembre, hasta el 10 de noviembre, no olvides recomendar este espacio a tus contactos, gracias!!!.</p>
+			</div>
+			<div class="row content-bottom-row">
+				<div class="col-md-3 content-row-column">
+					<div class="column-top">
+						<h3><a href="#">U.E. San Simón de Ayacucho</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">U.E. Villa Alemania</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+
+				</div>
+				<div class="col-md-3 content-row-column">
+					<div class="column-top">
+						<h3><a href="#">Liceo La Paz "B"</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">U.E. Holanda</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">U.E. Claudio Sanjinés </a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+				</div>
+				<div class="col-md-3 content-row-column">
+					<div class="column-top">
+						<h3><a href="#">Liceo Venezuela "B" </a></h3>
+						<p><dl>
+							<dt>Iris Martela
+								<dd>hola mundo</dd>
+							</dt>
+
+							<li>Andrea </li>
+							<li></li>
+							<li></li>
+							<li></li>
+						</ul>
+						</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">U.E. Fernando Bravo</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">U.E. Abel Iturralde Palacios </a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+				</div>
+
+				<div class="col-md-3 content-row-column">
+					<div class="column-top">
+						<h3><a href="#">U.E. Nuestra Señora de La Paz</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+					<div class="column-top">
+						<h3><a href="#">U.E. 6 de Junio</a></h3>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent vitae eros eget tellus tristique bibendum.</p>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	<!-- Content Ends Here --->
+	<!-- Footer Starts Here --->
+	<div class="footer" id="contact">
+		<div class="container">
+			<div class="footer-top">
+				<pre>
+Telf.: (591-2) 2200720 - 2200730
+Fax: (591-2) 2200740
+Casilla 6500
+Correo Electrónico: contacto@adsib.gob.bo
+Dirección: Calle Ayacucho y Mercado No 308 - Edificio de la Vicepresidencia del Estado Piso 3
+La Paz, Bolivia © 2011 </pre>
+				
+			</div>
+			<div class="row footer-row">
+
+				<div class="clearfix"></div>
+			</div>
+			<p class="copyright">La Paz Bolivia 2015 <span><a href="http://www.adsib.gob.bo/adsibnueva/" target="_black">ADSIB</a></span></p>
+		</div>
+	</div>
+	<!-- Footer Ends Here --->
+</body>
